@@ -1,0 +1,117 @@
+@media (max-width: 576px) {
+  /* media nav-bar */
+  #nav-bar .nav-img {
+    display: none;
+  }
+  #nav-bar .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .nav-container {
+    text-align: left;
+    border: none;
+  }
+
+  /* media TARGET & INFOR */
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #target {
+    padding: 0px 50px 30px 50px;
+  }
+  #personal-info {
+    padding: 0px 50px 30px 50px;
+  }
+
+  /* media job-info */
+  #job-info .job-items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .job-item {
+    width: auto;
+    height: auto;
+    border: 1px solid #e9ecef;
+    padding: 40px 30px 20px 20px;
+    margin: 0 30px;
+  }
+  .job-header {
+    padding-right: 10px;
+  }
+  .job-header h1 {
+    padding-top: 10px;
+  }
+  #hobby .job-content i {
+    margin: 6px;
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #199cdb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hobby .job-content span {
+    margin: 4px;
+  }
+
+  /* cerificate */
+  .certi-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .certi-img img {
+    width: 100%;
+  }
+  .certi-items {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-content: center;
+  }
+  .certi-items:nth-child(1) {
+    margin-right: 0;
+    border-bottom: 1px solid #d6c08d;
+  }
+  .certi-items:nth-child(2),
+  .certi-items:nth-child(3) {
+    padding-left: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-bottom: 1px solid #d6c08d;
+  }
+  .certi-items:nth-child(3),
+  .certi-items:nth-child(4) {
+    border-top: none;
+    padding-top: 0px;
+  }
+  .certi-items:nth-child(4) {
+    display: none;
+  }
+  .certi-title {
+    padding-left: 20px;
+  }
+
+  /* project */
+  .pro-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+  }
+  /* <!-- CONTACT --> */
+  #footer ul {
+    height: 70px;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+}

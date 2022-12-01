@@ -1,0 +1,132 @@
+.cv-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+.timeline {
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+h1 {
+  padding: 10px;
+  margin: 25px;
+  border-bottom: 1px solid #949494;
+}
+p {
+  margin-bottom: 5px !important;
+  padding: 0;
+}
+.item {
+  padding: 0px 0 5px 0;
+  background-color: azure;
+}
+.flag {
+  margin: 0px 50px 10px 50px !important;
+  font-size: 40px;
+}
+.item i {
+  margin: 0px 30px 10px 30px;
+  font-size: 40px;
+}
+.content-goal {
+  margin: 0 50px 0 50px;
+  border-bottom: 1px solid #d4d2d2;
+}
+.content-text {
+  margin: 0 30px 0 30px;
+  border-bottom: 1px solid #96d7df;
+  border-bottom-style: dashed;
+}
+.content {
+  padding: 6px 0 6px 0;
+  margin-top: 10px;
+  display: flex;
+}
+.text {
+  padding-right: 20px;
+  padding-top: 6px;
+}
+.content-scopes {
+  gap: 25px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h2 {
+  padding-bottom: 25px;
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .cv-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .timeline {
+    grid-column: 1;
+    grid-row: 5/6;
+  }
+  .item {
+    width: 100%;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .icon {
+    text-align: center;
+    justify-content: center;
+  }
+  .text-pri {
+    padding: 0 50px 0 50px;
+  }
+  .content-scopes {
+    gap: 25px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text-time {
+    padding-left: 30px;
+  }
+}
+
+/* tablet */
+@media (min-width: 576px) and (max-width: 991px) {
+  .cv-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .timeline {
+    grid-column: 1;
+    grid-row: 5/6;
+  }
+  .item {
+    width: 100%;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .icon {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text-pri {
+    padding: 0 50px 0 50px;
+  }
+  .content-scopes {
+    gap: 25px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text-time {
+    padding-left: 30px;
+  }
+}
